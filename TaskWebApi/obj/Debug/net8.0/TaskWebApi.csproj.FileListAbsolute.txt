@@ -169,3 +169,4 @@ C:\Users\Ricardo\source\repos\TaskWebApi\TaskWebApi\bin\Debug\net8.0\TaskWebApi.
 C:\Users\Ricardo\source\repos\TaskWebApi\TaskWebApi\bin\Debug\net8.0\TaskWebApi.runtimeconfig.json
 C:\Users\Ricardo\source\repos\TaskWebApi\TaskWebApi\obj\Debug\net8.0\TaskWebApi.genruntimeconfig.cache
 C:\Users\Ricardo\source\repos\TaskWebApi\TaskWebApi\obj\Debug\net8.0\ref\TaskWebApi.dll
+C:\Users\Ricardo\source\repos\TaskWebApi\TaskWebApi\obj\Debug\net8.0\TaskWebApi.sourcelink.json

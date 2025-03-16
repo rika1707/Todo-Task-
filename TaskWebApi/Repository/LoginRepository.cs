@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaskWebApi.Context;
+using TaskWebApi.Models;
 using TaskWebApi.Models.DTOs;
 using TaskWebApi.Repository.IRepository;
 
@@ -12,13 +13,13 @@ namespace TaskWebApi.Repository
         {
             _taskDbContext = taskDbContext;
         }
-        public async Task<bool> Login(LoginDto loginDto)
+        public async Task<User?> Login(LoginDto loginDto)
         {
             var user = await _taskDbContext.Users.FirstOrDefaultAsync(u =>
                             u.UserName == loginDto.UserName &&
                             u.Password == loginDto.Password);
-            if (user == null) return false;
-            return true;
+            if (user == null) return null;
+            return user;
         }
     }
 }
