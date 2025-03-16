@@ -19,9 +19,9 @@ namespace TaskWebApi.Controllers
             _loginService = loginService;
         }
 
-        // ✅ Crear usuario
+        // ✅ Iniciar sesion
         [HttpPost]
-        [SwaggerOperation(summary: "Crear usuario")]
+        [SwaggerOperation(summary: "Iniciar Sesion")]
         public async Task<ActionResult<bool>> Login([FromBody] LoginDto loginDto)
         {
             var result = await _loginService.Login(loginDto);

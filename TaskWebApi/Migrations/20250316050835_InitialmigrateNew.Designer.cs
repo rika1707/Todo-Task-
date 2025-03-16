@@ -12,8 +12,8 @@ using TaskWebApi.Context;
 namespace TaskWebApi.Migrations
 {
     [DbContext(typeof(TaskDbContext))]
-    [Migration("20250314145520_TableTodos")]
-    partial class TableTodos
+    [Migration("20250316050835_InitialmigrateNew")]
+    partial class InitialmigrateNew
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

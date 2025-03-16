@@ -1,0 +1,6 @@
+[build]
+builder = "nixpacks"
+buildCommand = "cd TaskWepApi && dotnet restore && dotnet build"
+
+[start]
+startCommand = "cd TaskWepApi && dotnet run"

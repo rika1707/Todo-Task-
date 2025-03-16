@@ -21,7 +21,7 @@ namespace TaskWebApi.Services
             if (IsLogged is null)
             {
                 return new LoginResponseDto
-                { Exito = false, Message = "usuario o Contrasenia Incorrectos" };
+                { Exito = false, Message = "Usuario o Contraseña Incorrectos" };
             }
             var token = _authService.GenerateJwtToken(loginDto.UserName);
             return new LoginResponseDto { Exito = true, Message = "Usuario Logeado con Exito",
